@@ -10,7 +10,7 @@ const path = require("path")
 
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 mongoose.connect("mongodb+srv://azamit:azi12345@cluster0.md4zphz.mongodb.net/CourseCorrect?retryWrites=true&w=majority", (err) => {
     if (err) {
